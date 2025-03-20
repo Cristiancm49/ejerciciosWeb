@@ -1,0 +1,100 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.cajaNavbar {
+    width: 100%;
+    height: 100%;
+    background-color: rebeccapurple;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 10% 10% auto 12%;
+}
+
+.navbar{
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenidonav {
+    background-color: yellow;
+    height: 50px;
+    width: 50px;
+    display: none;
+    padding: 5px;
+}
+
+.cajaRoja {
+    background-color: red;
+}
+
+.footer{
+    background-color: blueviolet;
+
+}
+
+.cajaAzul {
+    background-color: blue;
+    width: 100%;
+    height: 20%;
+}
+
+.containerCenter {
+    background-color: yellow;
+    height: auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    flex-grow: 1;
+}
+
+.containerCaja {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 10px;
+    gap: 15px;
+}
+
+.caja {
+    background-color: aqua;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+    padding: 15px;
+}
+
+.cajaintro1{
+    background-color: burlywood;
+    width: 100%;
+    height: 50%;
+}
+
+@media (min-width: 769px) {
+    .contenidonav {
+        display: block;
+    }
+
+    .containerCenter {
+        grid-template-columns: 30% 1fr;
+    }
+
+    .cajaAzul {
+        height: 100%;
+        width: 100%;
+    }
+    .caja {
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        align-items: center;
+    }
+}
