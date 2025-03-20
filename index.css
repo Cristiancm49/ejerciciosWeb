@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    padding-inline: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#container{
+    display: flex;
+    height: 100%;
+    border: 1px solid rgb(177, 174, 174);
+    border-radius: 5px; 
+    padding: 10px 50px 10px 50px;   
+}
+p {
+    font-size: 0.8rem;
+}
+
+.lista-xp {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+ul {
+    list-style: none; /* Quita los marcadores de lista */
+    padding-left: 0; 
+    display: flex;
+    flex-direction: column;
+    gap: 2px; /* Elimina el padding predeterminado */
+}
+ul li {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 5px;
+}
+ul li::before {
+    
+    content: "- "; /* Agrega un guion antes del texto */
+}
+
+
+#profile{
+    position: relative;
+    height: 98%;
+    width: 34%;
+}
+
+.text {
+    font-size: 0.9rem;
+}
+
+.title-name {
+    font-size: 40px;
+    margin-top: 25px;
+    font-family: fantasy;
+    height: auto;
+}
+
+.title-xp {
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-top: 7px;
+}
+
+.text-xp{
+    font-size: 1.1rem;
+}
+
+.subtitle {
+    font-weight: 400;    
+}
+
+.xp-laboral {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+.sobre-mi {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    margin: 300px 5px 5px 5px;
+    padding: 15px;
+    gap: 5px;
+}
+
+#img{
+    width: 205px;
+    height: 280px;
+    position: absolute;
+    top: 20px;
+    left: 25px;
+    z-index: 1;
+    filter: grayscale(100%) ;
+    
+}
+
+.info-contacto {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+}
+
+.my-info{
+    position: relative;
+    border: 3px solid rgb(0, 0, 0);
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+
+.contact {
+    padding-inline: 15px;
+    margin-top: 20px;
+}
+
+.container-xp {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#description {
+    width: 70%;
+    padding: 10px;
+    margin-left: 45px;
+}
+
+.lista-estudios {
+    margin-top: 35px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
